@@ -1,6 +1,7 @@
 const list = document.querySelector("ul");
 const logomarc = document.querySelector(".logomarc");
 const buttonShowall = document.querySelector(".showAll");
+const boxLogo = document.querySelector(".box-logo")
 let myLi = "";
 
 
@@ -33,7 +34,7 @@ function sumAllItems() {
   const totalValue = menuOptions.reduce((acumulador, product) => {
     return acumulador + Number(product.price);
   }, 0);
-  logomarc.remove();
+  boxLogo.appendChild(logomarc);
   list.innerHTML = `
     <li>
     <p> O Valor total dos itens é ${formatCurrency(totalValue)}</p>

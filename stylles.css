@@ -100,3 +100,14 @@ p{
     font-weight: 900;
     color: #79cb15;
 }
+@media only screen and (max-width: 600px) {
+ul {
+  position: absolute;
+  top: -41px;
+  grid-template-columns: 145px 145px;
+  gap: 8px;
+}
+.logo-hamburgue {
+  width: 90%;
+}
+}
